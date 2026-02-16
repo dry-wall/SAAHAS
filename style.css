@@ -242,3 +242,112 @@ kbd {
     white-space: nowrap;
     font-family: monospace;
 }
+
+/* Homepage & Navbar Styles */
+.navbar {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #2c3e50;
+}
+
+.homepage {
+    justify-content: flex-start;
+    background-color: #f8f9fa;
+    padding: 0;
+}
+
+.hero {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    color: white;
+    padding: 4rem 2rem;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    color: #e6f7ff;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+    background-color: #c0392b;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.feature-card h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer {
+    padding: 2rem;
+    color: #718096;
+    font-size: 0.9rem;
+    margin-top: auto;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #e2e8f0;
+}

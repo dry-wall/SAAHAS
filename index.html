@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Braille Trainer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrailleMaster - Learn Braille Typing</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h2>Braille Trainer</h2>
-    
-    <div id="setup-section">
-        <label for="textInput">Text to practice:</label>
-        <div class="input-group">
-            <input id="textInput" type="text" placeholder="e.g. hello">
-            <button onclick="startTraining()">Start</button>
-        </div>
-    </div>
+<body class="homepage">
 
-    <div id="practice-section" class="hidden">
-        <div id="status-display">Get Ready...</div>
-        <div id="braille-input" tabindex="0">
-            Click here and type braille keys
+    <nav class="navbar">
+        <div class="logo">BrailleMaster</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="trainer.html">Trainer</a>
         </div>
-        
-        <div class="feedback-container">
-            <div id="activity-log">
-                <div class="log-header">Activity Log</div>
-                <div class="log-content" id="log-content"></div>
-            </div>
-            
-            <div id="mapping-guide">
-                <div class="guide-header">Braille Guide</div>
-                <div class="guide-content" id="guide-content"></div>
-            </div>
-        </div>
+    </nav>
 
-        <div class="instructions">
-            <p>Use keys: <kbd>F</kbd> <kbd>D</kbd> <kbd>S</kbd> <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd></p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Master Braille Typing in Minutes</h1>
+            <p>A distraction-free tool to practice 6-dot Braille patterns directly on your keyboard.</p>
+            <a href="trainer.html" class="cta-button">Start Practicing Now</a>
         </div>
-    </div>
+    </header>
 
-    <script src="braille.js"></script>
+    <section class="features">
+        <div class="feature-card">
+            <h3>⌨️ 6-Key Input</h3>
+            <p>Use standard keys (F D S J K L) to simulate a Braille keyboard layout.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔊 Audio Feedback</h3>
+            <p>Instant audio cues for correct and incorrect dot patterns.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📖 Real-time Guide</h3>
+            <p>Dynamic cheat sheet helps you learn characters as you type.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BrailleMaster. Built for accessibility.</p>
+    </footer>
+
 </body>
 </html>
