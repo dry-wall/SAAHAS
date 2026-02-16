@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Braille Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Braille Trainer</h2>
+    
+    <div id="setup-section">
+        <label for="textInput">Text to practice:</label>
+        <div class="input-group">
+            <input id="textInput" type="text" placeholder="e.g. hello">
+            <button onclick="startTraining()">Start</button>
+        </div>
+    </div>
+
+    <div id="practice-section" class="hidden">
+        <div id="status-display">Get Ready...</div>
+        <div id="braille-input" tabindex="0">
+            Click here and type braille keys
+        </div>
+        
+        <div class="feedback-container">
+            <div id="activity-log">
+                <div class="log-header">Activity Log</div>
+                <div class="log-content" id="log-content"></div>
+            </div>
+            
+            <div id="mapping-guide">
+                <div class="guide-header">Braille Guide</div>
+                <div class="guide-content" id="guide-content"></div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <p>Use keys: <kbd>F</kbd> <kbd>D</kbd> <kbd>S</kbd> <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd></p>
+        </div>
+    </div>
+
+    <script src="braille.js"></script>
+</body>
+</html>
